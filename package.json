@@ -1,0 +1,53 @@
+{
+  "name": "ropecalc",
+  "version": "0.1.0",
+  "description": "Computes and validates RoPE scaling parameters for context extension: linear, NTK, YaRN. Offline, exact, per-dimension honest.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ropecalc": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "rope",
+    "yarn",
+    "ntk",
+    "context-extension",
+    "position-interpolation",
+    "llm",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/ropecalc.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/ropecalc#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/ropecalc/issues"
+  }
+}
