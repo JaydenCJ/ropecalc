@@ -2,7 +2,7 @@
   "name": "ropecalc",
   "version": "0.1.0",
   "description": "Computes and validates RoPE scaling parameters for context extension: linear, NTK, YaRN. Offline, exact, per-dimension honest.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
